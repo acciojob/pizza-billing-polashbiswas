@@ -19,8 +19,10 @@ public class Pizza {
     boolean isBillGenerated;
 
     public Pizza(Boolean isVeg){
+        this.isCheeseAdded = false;
+        this.isToppingsAdded = false;
+        this.isTakewayAdded = false;
         this.isVeg = isVeg;
-        // your code goes here
         this.cheesePrice = 80;
         this.takeWayPrice = 20;
         if(isVeg == true){
@@ -32,9 +34,7 @@ public class Pizza {
             this.price = 400;
             this.toppingPrice = 120;
         }
-        this.isCheeseAdded = false;
-        this.isToppingsAdded = false;
-        this.isTakewayAdded = false;
+
 
         this.bill = "Base Price Of The Pizza: "+this.price + "\n";
     }
